@@ -6,15 +6,14 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'nav',
-    //   component: sideNav
-    // },
+    {
+      path: '/',
+      redirect:'/endTask'
+    },
     {
       path: '/endTask',
       name: 'endTask',
       component: resolve=>require(['@/components/endTask'],resolve)
-    },
+    }
   ]
 })
