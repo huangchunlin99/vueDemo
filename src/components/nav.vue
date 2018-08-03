@@ -13,7 +13,7 @@
       <ul style="color: white;margin-top: 20px" v-for="nav in navs">
         <!--<li  style="list-style-type:none;margin-right: auto;margin-left: auto" @click="fold(nav)">-->
         <li  class="topLi" @click="fold(nav)">
-          <!--<div style="display:inline-block;margin-top:8px;margin-right:4px" v-bind:class="[nav.icon]"></div>-->
+          <div style="display:inline-block;margin-top:8px;margin-right:4px" v-bind:class="[nav.icon]"></div>
           <div style="display: inline-block;width: 130px"><span>{{nav.title}}</span><span v-if="nav.count">&#40{{nav.count}}&#41</span></div><button v-if="nav.button"  class="button btn btn-info"><span>{{nav.button}}</span></button>
         </li>
         <li v-if="nav.subs&&nav.show" v-for="sub in nav.subs" @click="goTo(sub)" class="subLi">
