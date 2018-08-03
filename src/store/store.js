@@ -1,0 +1,56 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+export default new Vuex.Store({
+  state:{
+    tasks:[
+      {name:"一二三四五六七八九十",type:"大赛",
+        sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
+        demand:1,submitted:0,completed:1},
+      {name:"一二三四五六七八九十",type:"大赛",
+        sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
+        demand:1,submitted:0,completed:0},
+      {name:"一二三四五六七八九十",type:"大赛",
+        sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
+        demand:1,submitted:0,completed:1},
+      {name:"一二三四五六七八九十",type:"大赛",
+        sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
+        demand:1,submitted:0,completed:0},
+      {name:"一二三四五六七八九十",type:"大赛",
+        sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
+        demand:1,submitted:0,completed:1},
+      {name:"一二三四五六七八九十",type:"大赛",
+        sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
+        demand:1,submitted:0,completed:0}
+    ],
+    navs: [{
+      title:"网易大学网易大学网易大学网易大学",url:'/jSchedule',icon:'',button:'切换',
+    },{
+      title:"我的班级",url:"",show:false,icon:'',button:'加入',count:3,subs:[{
+        title:"卖鱼桥小学",
+        url:'',
+        icon:''
+      },{
+        title:"网易大学武林壹号小学五年级",
+        url:'',
+        icon:''
+      },{
+        title:"卖鱼桥小学三年二班",
+        url:'',
+        icon:''
+      },{
+        title:"更多班级",
+        url:'',
+        icon:''
+      }
+      ]
+    },
+      {
+        title:"进行中任务",url:"",icon:'ux-icon-halfcircle'
+      },
+      {
+        title:"已结束任务",url:'/endTask',icon:'ux-icon-success'
+      }
+    ]
+  }
+})

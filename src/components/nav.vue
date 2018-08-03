@@ -26,37 +26,12 @@
 <script>
   export default {
   name: 'sideNav',
+    computed:{
+    navs(){return this.$store.state.navs}
+    },
   data(){
     return{
-    navs: [{
-      title:"网易大学网易大学网易大学网易大学",url:'/jSchedule',icon:'',button:'切换',
-    },{
-      title:"我的班级",url:"",show:false,icon:'',button:'加入',count:3,subs:[{
-        title:"卖鱼桥小学",
-        url:'',
-        icon:''
-      },{
-        title:"网易大学武林壹号小学五年级",
-        url:'',
-        icon:''
-      },{
-        title:"卖鱼桥小学三年二班",
-        url:'',
-        icon:''
-      },{
-        title:"更多班级",
-        url:'',
-        icon:''
-      }
-      ]
-    },
-      {
-      title:"进行中任务",url:"",icon:'ux-icon-halfcircle'
-    },
-      {
-        title:"已结束任务",url:'/endTask',icon:'ux-icon-success'
-      }
-    ]
+
     }
   },
  methods:{

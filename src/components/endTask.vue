@@ -22,28 +22,14 @@
 <script>
   export default {
     name: 'endTask',
+    computed:{
+      tasks(){
+        return this.$store.state.tasks
+      }
+    },
     data () {
       return {
-tasks:[
-  {name:"一二三四五六七八九十",type:"大赛",
-    sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
-  demand:1,submitted:0,completed:1},
-  {name:"一二三四五六七八九十",type:"大赛",
-    sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
-    demand:1,submitted:0,completed:0},
-  {name:"一二三四五六七八九十",type:"大赛",
-    sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
-    demand:1,submitted:0,completed:1},
-  {name:"一二三四五六七八九十",type:"大赛",
-    sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
-    demand:1,submitted:0,completed:0},
-  {name:"一二三四五六七八九十",type:"大赛",
-    sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
-    demand:1,submitted:0,completed:1},
-  {name:"一二三四五六七八九十",type:"大赛",
-    sourcePlace:"网易大学",sourceDetail:"卖鱼桥小学分部17届三年级(一班)",
-    demand:1,submitted:0,completed:0}
-]
+
       }
     }
   }
